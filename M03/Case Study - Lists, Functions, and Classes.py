@@ -28,7 +28,7 @@ class Automobile(Vehicle):
         self.doors = doors
         self.roof = roof
         
-    def show_record(self):
+    def show_car(self):
         """Displays the created instance with it's attributes"""
         print(f"Vehicle type: {self.type}\nYear: {self.year}\nMake: {self.make}\nModel: {self.model}\nNumber of doors: {self.doors}\nType of roof: {self.roof}\n")
     
@@ -46,7 +46,7 @@ def user_prompt():
             roof = input("Enter the type of roof (sold or sun roof): ")
             vehicle = Automobile(type, year, make, model, doors, roof)
             print()
-            vehicle.show_record()
+            vehicle.show_car()
             answer = input('Type "add" to add another vehicle or "quit" to exit: ')
         else:
             answer = input('Entry not recognized. Type "add" to add a record or "quit" to exit: ')
